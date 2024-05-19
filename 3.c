@@ -52,7 +52,7 @@ vertex count(unsigned long long len, edge arr[]){
         if (arr[i].end > vertex_len) vertex_len = arr[i].end;
         if (arr[i].start > vertex_len) vertex_len = arr[i].start;
     }
-    return vertex_len;
+    return vertex_len + 1;
 }
 
 void search_max(unsigned long long len_e, edge arr_e[]){
